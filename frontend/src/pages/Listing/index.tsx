@@ -5,6 +5,7 @@ import axios from "axios";
 import { BASE_URL } from "utils/requests";
 import { MoviePage } from "types/movies";
 
+
 function Listing() {
 
     const [pageNumber, setPageNumber] = useState(0);
@@ -31,6 +32,8 @@ function Listing() {
 
     const handlePageChange = (newPageNumber : number) => {
         setPageNumber(newPageNumber);
+
+
     }
 
     return (
